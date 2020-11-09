@@ -1,0 +1,126 @@
+body {
+    height: 300vh;
+    background-color: red;
+}
+
+.bgPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+    filter: hue-rotate(120deg);
+    animation: animate 7s linear infinite;
+    .bdPrincipal {
+        position: relative;
+        padding: 50px;
+        width: 560px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 0 5px 35px rgba(0, 0, 0, 0.2);
+
+        .tituloPrincipal {
+            color: white;
+            text-align: center;
+        }
+    }
+    .bdPrincipal::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 5px;
+        pointer-events: nome;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.1) 15%,
+            transparent 50%,
+            transparent 85%,
+            rgba(255, 255, 255, 0.3) 100%
+        );
+    }
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.borP {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    transition: background-color 0.6s ease;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 20px;
+
+    .navbar-brand {
+        width: 700%;
+    }
+
+    .nomePrincipal {
+        color: white;
+        font-weight: 600;
+        &:hover {
+            color: white;
+        }
+    }
+    .collapse {
+        max-width: 80px;
+        .drop {
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: none;
+            }
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .dropdown-menu {
+            min-width: 6rem;
+            margin-top: 25px;
+            .dropdown-item {
+                padding: 5px 20px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid gray;
+            }
+        }
+    }
+}
+
+.tActive {
+    background-color: white;
+    transition: background-color 0.6s ease;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3);
+
+    .nomePrincipal {
+        color: #313131;
+        &:hover {
+            color: #313131;
+        }
+    }
+    .drop {
+        color: #313131 !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .collapse {
+        max-width: 100% !important;
+    }
+}
