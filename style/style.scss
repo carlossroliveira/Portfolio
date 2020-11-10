@@ -1,25 +1,157 @@
-@import 'header';
+@import "header";
 
 body {
     height: 300vh;
 }
 
-
-
 /* rodape */
 .footerP {
+    background-color: #3bb6d5;
     padding: 50px 50px 25px 50px;
     font-weight: 600;
 
-    .teste01 {
+    .cont01 {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .teste02 {
-        border: 1px solid red;
+    .cont02 {
+        display: flex;
+        justify-content: center;
+        .verde {
+            width: 9em;
+            height: 150px;
+            background: #00a859;
+            font-size: 30px;
+            filter: url(#wavy);
+        }
+
+        .amarelo-top {
+            width: 1px;
+            height: 1px;
+            border: solid 3.3em transparent;
+            border-bottom: solid 2.3em #ffcc29;
+            border-top-width: 0;
+            position: absolute;
+            top: 7px;
+            left: 36px;
+        }
+
+        .amarelo-bottom {
+            width: 1px;
+            height: 1px;
+            border: solid 3.3em transparent;
+            border-top: solid 2.3em #ffcc29;
+            border-bottom-width: 0;
+            position: absolute;
+            top: 76px;
+            left: 35px;
+        }
+
+        .azul-bg {
+            width: 90px;
+            height: 90px;
+            background: #3e4095;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 90px;
+            overflow: hidden;
+        }
+
+        .faixa-branca {
+            width: 17em;
+            height: 17em;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: -245px;
+        }
+
+        .azul-bottom {
+            width: 16em;
+            height: 16em;
+            background: #3e4095;
+            border-radius: 50%;
+            position: absolute;
+            top: 36px;
+            left: -231px;
+        }
+
+        .stars li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #fff;
+            position: absolute;
+        }
+
+        .stars li:before {
+            content: "★";
+        }
+        .star-1:before {
+            font-size: 0.3em;
+        }
+        .star-2:before {
+            font-size: 0.25em;
+        }
+        .star-3:before {
+            font-size: 0.2em;
+        }
+        .star-4:before {
+            font-size: 0.14em;
+        }
+        .star-5:before {
+            font-size: 0.1em;
+        }
+
+        #procion {
+            top: 1.15em;
+            left: 0.5em;
+        }
+        #alphard {
+            top: 0.85em;
+            left: 2em;
+        }
+        #muliphen {
+            top: 1.3em;
+            left: 1.2em;
+        }
+        #sirio {
+            top: 1.6em;
+            left: 0.8em;
+        }
+        #mirzam {
+            top: 0.9em;
+            left: 0.46em;
+        }
+        #wezen {
+            top: 0.92em;
+            left: 1.52em;
+        }
+        #adhara {
+            top: 1.25em;
+            left: 1.43em;
+        }
+        #canopus {
+            top: 1.65em;
+            left: 1.9em;
+        }
+        #gracus {
+            top: 0.3em;
+            left: 1.4em;
+        }
+        #palida {
+            top: 0.63em;
+            left: 0.95em;
+        }
+        #intrometida {
+            top: -0.2em;
+            left: 2.23em;
+        }
     }
-    .teste03 {
+    .cont03 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -30,12 +162,12 @@ body {
             color: black;
         }
     }
-    .teste04 {
+    .cont04 {
         text-align: center;
     }
 
     .linha {
-        border-top: 1px solid gray;
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
         margin: 10px 0;
     }
 }
