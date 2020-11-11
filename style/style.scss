@@ -10,9 +10,8 @@ body {
 
     .myP {
         text-align: center;
-        font-weight: 600;
         margin-bottom: 30px;
-    
+        font-weight: 600;
     }
     .contMy {
         border: 1px solid gray;
@@ -51,5 +50,9 @@ body {
                 width: 100%;
             }
         }
+        .myTitulo02{
+            cursor: pointer;
+        }
     }
 }
+

@@ -419,8 +419,8 @@ body {
 
 .divMy .myP {
   text-align: center;
-  font-weight: 600;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 .divMy .contMy {
@@ -469,5 +469,9 @@ body {
   100% {
     width: 100%;
   }
+}
+
+.divMy .contMy .myTitulo02 {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
