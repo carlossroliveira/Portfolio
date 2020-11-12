@@ -408,13 +408,43 @@
   }
 }
 
-body {
-  height: 300vh;
-  font-family: "Poppins", sans-serif;
+.card__principal {
+  position: relative;
 }
 
-.divMy {
-  margin-top: 10%;
+.card__principal .card__img {
+  position: relative;
+  width: 100%;
+}
+
+.card__principal .card__title {
+  top: 65px;
+  left: 85px;
+  position: absolute;
+  font-size: 2rem;
+  color: #212121;
+  text-transform: uppercase;
+  border-bottom: 16px solid #222;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+  margin: auto 0;
+}
+
+.imgbx {
+  position: absolute;
+  top: 13px;
+  left: 26px;
+  width: 304px;
+  height: 171px;
+  background: url(../img/site.png);
+  background-position: top;
+  background-size: 100%;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.imgbx:hover {
+  background-position: bottom;
 }
 
 .divMy .myP {
@@ -427,30 +457,21 @@ body {
   border: 1px solid gray;
   border-radius: 50px;
   padding: 35px;
-  /* box-shadow: inset -3px -3px 7px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692); */
-}
-
-.divMy .contMy .myTitulo01 {
-  position: relative;
-  font-size: 2rem;
-  color: #222;
-  text-transform: uppercase;
-  border-bottom: 16px solid #222;
-  letter-spacing: 0.05em;
-  line-height: 1.2em;
-  margin: auto 0;
+  -webkit-box-shadow: inset -3px -3px 7px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+          box-shadow: inset -3px -3px 7px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
 }
 
 .divMy .contMy .myTitulo01::before {
-  /* content: attr(data-text);
-            position: absolute;
-            top: 0px;
-            left: 0;
-            width: 100%;
-            color: #03a9f4;
-            overflow: hidden;
-            border-bottom: 16px solid #3bb6d5;
-            animation: myAnimate 5s linear infinite; */
+  content: attr(data-text);
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  color: #03a9f4;
+  overflow: hidden;
+  border-bottom: 16px solid #3bb6d5;
+  -webkit-animation: myAnimate 5s linear infinite;
+          animation: myAnimate 5s linear infinite;
 }
 
 @-webkit-keyframes myAnimate {
@@ -471,7 +492,145 @@ body {
   }
 }
 
-.divMy .contMy .myTitulo02 {
-  cursor: pointer;
+/* media Adicional */
+@media (min-width: 500px) and (max-width: 575px) {
+  .contMy {
+    margin: 20px;
+  }
+  .contMy .card__principal {
+    margin-bottom: 20px;
+  }
+  .contMy .mac .imgbx {
+    top: 12px;
+    left: 28px;
+    width: 285px;
+    height: 167px;
+  }
+  .contMy .card__title {
+    font-size: 200%;
+    top: 60px;
+    left: 82px;
+  }
+}
+
+/* Media myProjects */
+@media (max-width: 425px) {
+  .contMy {
+    margin: 10px;
+  }
+  .contMy .card__principal {
+    margin-bottom: 20px;
+  }
+  .contMy .mac .imgbx {
+    top: 11px;
+    left: 26px;
+    width: 250px;
+    height: 141px;
+  }
+  .contMy .card__title {
+    top: 55px !important;
+    left: 60px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .contMy {
+    margin: 10px;
+  }
+  .contMy .card__principal {
+    margin-bottom: 20px;
+  }
+  .contMy .mac .imgbx {
+    top: 9px;
+    left: 24px;
+    width: 204px;
+    height: 115px;
+  }
+  .contMy .card__title {
+    font-size: 130% !important;
+    top: 45px !important;
+    left: 70px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .contMy {
+    margin: 10px;
+  }
+  .contMy .card__principal {
+    margin-bottom: 20px;
+  }
+  .contMy .mac .imgbx {
+    top: 7px;
+    left: 22px;
+    width: 154px;
+    height: 86px;
+  }
+  .contMy .card__title {
+    font-size: 100% !important;
+    top: 35px !important;
+    left: 55px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .card__principal {
+    margin-bottom: 20px;
+  }
+  .mac .imgbx {
+    top: 8px;
+    left: 24px;
+    width: 186px;
+    height: 106px;
+  }
+  .card__title {
+    font-size: 100% !important;
+    top: 45px !important;
+    left: 70px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card__principal {
+    margin-bottom: 20px;
+  }
+  .mac .imgbx {
+    top: 7px;
+    left: 23px;
+    width: 170px;
+    height: 96px;
+  }
+  .card__title {
+    font-size: 100% !important;
+    top: 35px !important;
+    left: 65px !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .mac .imgbx {
+    top: 11px;
+    left: 26px;
+    width: 244px;
+    height: 137px;
+  }
+  .card__title {
+    top: 50px !important;
+    left: 55px !important;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 2560px) {
+  .mac .imgbx {
+    top: 13px;
+    left: 29px;
+    width: 297px;
+    height: 168px;
+  }
+}
+
+body {
+  height: 300vh;
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
