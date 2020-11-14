@@ -187,6 +187,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 15px;
 }
 
 .footerP .cont02 .verde {
@@ -503,8 +504,8 @@
   .contMy .mac .imgbx {
     top: 12px;
     left: 28px;
-    width: 285px;
-    height: 167px;
+    width: 289px;
+    height: 164px;
   }
   .contMy .card__title {
     font-size: 200%;
@@ -648,11 +649,6 @@
   background-color: #3bb6d5;
 }
 
-body {
-  height: 300vh;
-  font-family: "Poppins", sans-serif;
-}
-
 .divAbout .tituloAbout {
   text-align: center;
   margin-bottom: 30px;
@@ -660,21 +656,82 @@ body {
 }
 
 .divAbout .sectionAbout {
-  background-color: red;
   border: 1px solid gray;
   border-radius: 50px;
   padding: 35px;
   -webkit-box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
           box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .divAbout .sectionAbout .aboutMe {
   text-align: center;
-  padding: 40px;
+  padding: 10px 20px 20px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.09);
 }
 
 .divAbout .sectionAbout .aboutMe .aboutFoco:hover {
   background-color: #3bb6d5;
+}
+
+.divAbout .sectionAbout .bulb-off {
+  width: 50px;
+  height: 50px;
+  background: url("../img/lampadaOff.png") no-repeat;
+  margin: 0 auto;
+}
+
+.divAbout .sectionAbout .bulb-on {
+  width: 50px;
+  height: 50px;
+  background: url("../img/lampadaOn.png") no-repeat;
+  margin: 0 auto;
+}
+
+.divAbout .sectionAbout .bulb-off,
+.divAbout .sectionAbout .bulb-on:hover {
+  cursor: pointer;
+}
+
+.darkMode {
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 35px;
+  -webkit-box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+          box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  background-color: #212121;
+  color: #fff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-image: url("../img/oRappaWhite.png");
+  background-repeat: no-repeat;
+  background-position: +20px 5px;
+}
+
+.darkMode .aboutMe {
+  text-align: center;
+  padding: 10px 20px 20px;
+  border-bottom: 2px solid rgba(225, 255, 255, 0.5);
+}
+
+.darkMode .aboutMe .aboutFoco:hover {
+  background-color: #3bb6d5;
+}
+
+.darkMode .bulb-off {
+  width: 50px;
+  height: 50px;
+  background: url("../img/lampadaOn.png") no-repeat;
+  margin: 0 auto;
+}
+
+.darkMode .bulb-off,
+.darkMode .bulb-on:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
