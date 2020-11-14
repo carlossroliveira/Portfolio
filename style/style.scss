@@ -1,9 +1,32 @@
-@import "header", "footer", "myProject";
+@import "header", "footer", "myProject", "scrollBar";
 
 body {
     height: 300vh;
     font-family: "Poppins", sans-serif;
 }
 
+.divAbout {
+    .tituloAbout {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
 
+    .sectionAbout {
+        background-color: red;
+        border: 1px solid gray;
+        border-radius: 50px;
+        padding: 35px;
+        box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
 
+        .aboutMe {
+            
+            text-align: center;
+            padding: 40px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.09);
+            .aboutFoco:hover {
+                background-color: #3bb6d5;
+            }
+        }
+    }
+}
