@@ -158,13 +158,11 @@
         }
     }
     .cont04 {
+        margin-top: 10px;
         text-align: center;
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
     }
 
-    .linha {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-        margin: 10px 0;
-    }
     .scrollTop {
         position: fixed;
         bottom: 800px;

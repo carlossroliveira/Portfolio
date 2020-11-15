@@ -359,12 +359,9 @@
 }
 
 .footerP .cont04 {
+  margin-top: 10px;
   text-align: center;
-}
-
-.footerP .linha {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  margin: 10px 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .footerP .scrollTop {
@@ -448,10 +445,14 @@
   background-position: bottom;
 }
 
-.divMy .myP {
+.divMy {
+  margin-bottom: 40px;
+}
+
+.divMy .todosTitulos {
   text-align: center;
-  margin-bottom: 30px;
   font-weight: 600;
+  margin: 30px;
 }
 
 .divMy .contMy {
@@ -649,10 +650,14 @@
   background-color: #3bb6d5;
 }
 
-.divAbout .tituloAbout {
+.divAbout {
+  padding: 0;
+}
+
+.divAbout .todosTitulos {
   text-align: center;
-  margin-bottom: 30px;
   font-weight: 600;
+  margin: 30px;
 }
 
 .divAbout .sectionAbout {
@@ -694,13 +699,14 @@
   cursor: pointer;
 }
 
+/* Lado black */
 .darkMode {
   border: 1px solid gray;
   border-radius: 50px;
   padding: 35px;
   -webkit-box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
           box-shadow: inset 4px 4px 20px #3bb6d5, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
-  background-color: #212121;
+  background-color: #2a2b2f;
   color: #fff;
   -webkit-transition: 0.7s;
   transition: 0.7s;
@@ -731,34 +737,108 @@
   cursor: pointer;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.contentBlack {
-  /*   background-color: #212121; */
-}
-
-.contentBlack .card {
-  /*    background-color: #212121; */
-  position: relative;
-  width: 320px;
-  height: 440px;
-  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px -5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px -5px rgba(255, 255, 255, 0.5);
-          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px -5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px -5px rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
+.todosTitulos {
+  text-align: center;
+  font-weight: 600;
   margin: 30px;
 }
 
-.contentBlack .box {
+.containerHey {
+  background-color: #2a2b2f;
+  border-radius: 20px;
+}
+
+.containerHey .cardHey {
+  position: relative;
+  height: 440px;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 5px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.containerHey .cardHey .boxHey {
   position: absolute;
   top: 20px;
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background-color: #ebf5fc;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #2a2b2f;
+  border: 2px solid #1e1f23;
   border-radius: 15px;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.containerHey .cardHey .boxHey:hover {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.containerHey .cardHey .boxHey:hover .contentHey h3 {
+  color: white;
+}
+
+.containerHey .cardHey .boxHey:hover .contentHey p {
+  color: white;
+}
+
+.containerHey .cardHey .boxHey .contentHey {
+  padding: 20px;
+  text-align: center;
+}
+
+.containerHey .cardHey .boxHey .contentHey h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.containerHey .cardHey .boxHey .contentHey h3 {
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.containerHey .cardHey .boxHey .contentHey p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.containerHey .cardHey .boxHey::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
