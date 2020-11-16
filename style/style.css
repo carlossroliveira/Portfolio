@@ -442,11 +442,11 @@ body {
   left: 26px;
   width: 304px;
   height: 171px;
-  background: url(../img/site.png);
+  /* background: url(../img/site.png); */
+  background-color: red;
   background-position: top;
   background-size: 100%;
-  -webkit-transition: 5s;
-  transition: 5s;
+  /* transition: 5s; */
 }
 
 .imgbx:hover {
@@ -563,7 +563,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .contMy {
     margin: 10px;
   }
@@ -571,15 +571,15 @@ body {
     margin-bottom: 20px;
   }
   .contMy .mac .imgbx {
-    top: 7px;
-    left: 22px;
-    width: 154px;
-    height: 86px;
+    top: 8px;
+    left: 24px;
+    width: 190px;
+    height: 108px;
   }
   .contMy .card__title {
-    font-size: 100% !important;
-    top: 35px !important;
-    left: 55px !important;
+    font-size: 130% !important;
+    top: 45px !important;
+    left: 70px !important;
   }
 }
 
@@ -636,6 +636,26 @@ body {
     left: 29px;
     width: 297px;
     height: 168px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contMy {
+    margin: 10px;
+  }
+  .contMy .card__principal {
+    margin-bottom: 20px;
+  }
+  .contMy .mac .imgbx {
+    top: 7px;
+    left: 22px;
+    width: 154px;
+    height: 86px;
+  }
+  .contMy .card__title {
+    font-size: 100% !important;
+    top: 35px !important;
+    left: 55px !important;
   }
 }
 
