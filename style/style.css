@@ -442,11 +442,11 @@ body {
   left: 26px;
   width: 304px;
   height: 171px;
-  /* background: url(../img/site.png); */
-  background-color: red;
+  background: url(../img/site.png);
   background-position: top;
   background-size: 100%;
-  /* transition: 5s; */
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 .imgbx:hover {
@@ -577,7 +577,7 @@ body {
     height: 108px;
   }
   .contMy .card__title {
-    font-size: 130% !important;
+    font-size: 129% !important;
     top: 45px !important;
     left: 70px !important;
   }
